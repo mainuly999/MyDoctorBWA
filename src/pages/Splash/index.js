@@ -18,6 +18,6 @@ const styles = StyleSheet.create({
     flex:1, alignItems: 'center', justifyContent: 'center'
   },
   title:{
-    color: '#112340', fontWeight: '600', fontSize: 20, marginTop: '5%'
+    color: '#112340', fontFamily: 'Nunito-SemiBold', fontSize: 20, marginTop: '5%'
   }
 });
