@@ -1,9 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const Gap = ({height, width}) => {
+const Gap = ({tinggi, lebar}) => {
   return (
-    <View style={{height: height, width: width}}></View>
+    <View style={{height: tinggi, width: lebar}}></View>
   )
 }
 

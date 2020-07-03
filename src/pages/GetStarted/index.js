@@ -12,7 +12,7 @@ const GetStarted = ({navigation}) => {
       </View>
       <View>
         <Button tulisan="Register" onPencet={()=> navigation.navigate('Register')}/>
-        <Gap height={16}/>
+        <Gap tinggi={16}/>
         <Button type="secondary" tulisan="Sign in" onPencet={()=> navigation.navigate('Login')}/>
       </View>
     </ImageBackground>
