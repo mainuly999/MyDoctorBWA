@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import {IL_Logo} from '../../assets'
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+  useEffect(()=>{
+    console.log("jalan diawal Splash")
+    setTimeout(()=>{
+      navigation.replace('GetStarted');
+      // pada navigation ada opsi yakni replace dan navigate. kalau pakae replace maka fungsi back button tidak aakn berfungsi karena dia tidak menympan history sebelumnya
+    }, 3000);
+    return()=>{
+      console.log("update")
+    }
+  }, []);
   return (
     <View style={styles.page}>
       <IL_Logo/>

@@ -1,12 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const Button = ({type, tulisan}) => {
+const Button = ({type, tulisan, onPencet}) => {
   return (
-    <View style={styles.apakah(type)}>
+    <TouchableOpacity style={styles.apakah(type)} onPress={onPencet}>
       <Text style={styles.Text(type)}>{tulisan}</Text>
-    </View>
-  )
+    </TouchableOpacity>
+   )
 }
 
 export default Button;
