@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { IL_Logo } from '../../assets';
 import { Gap, Input, Link, Button } from '../../components';
+import { colors } from '../../utils/colors';
 
 const Login = () => {
   return (
@@ -13,7 +14,7 @@ const Login = () => {
       <Gap tinggi={24}/>
       <Input label="Password"/>
       <Gap tinggi={10}/>
-      <Link title="Forgot My Password"/>
+      <Link title="Forgot My Password" size={12}/>
       <Gap tinggi={40}/>
       <Button tulisan="Sign in"/>
       <Gap tinggi={30}/>
@@ -27,7 +28,7 @@ export default Login;
 const styles = StyleSheet.create({
   page:{padding:'10%', flex: 1,},
   title:{
-    color: '#112340', 
+    color: colors.secondary, 
     fontFamily: 'Nunito-SemiBold', 
     fontSize: 20, 
     marginTop: '10%',
