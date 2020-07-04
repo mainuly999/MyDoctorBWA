@@ -28,7 +28,7 @@ export default Login;
 const styles = StyleSheet.create({
   page:{padding:'10%', flex: 1,},
   title:{
-    color: colors.secondary, 
+    color: colors.text.default, 
     fontFamily: 'Nunito-SemiBold', 
     fontSize: 20, 
     marginTop: '10%',

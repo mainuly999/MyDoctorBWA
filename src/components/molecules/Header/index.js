@@ -1,14 +1,13 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { KembaliIconHitam } from '../../../assets';
-import { Gap } from '../../atoms';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { colors } from '../../../utils/colors';
+import { Button, Gap } from '../../atoms';
 
-const Header = () => {
+const Header = ({onPress, text}) => {
   return (
     <View style={styles.container}>
-      <KembaliIconHitam/>
-      <Text style={styles.text}>Daftar Akun</Text>
+      <Button type='icon-only' ikon="back-dark" onPencet={onPress}/>
+      <Text style={styles.text}>{text}</Text>
       {/* berika data dummmy gap sebesar lebar icon */}
       <Gap lebar={24}/>
     </View>
