@@ -3,6 +3,7 @@ import { StyleSheet, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { colors } from '../../../utils/colors';
 import IconOnly from './IconOnly';
+import { fonts } from '../../../utils';
 
 const Button = ({type, tulisan, onPencet, ikon}) => {
   if(type === 'icon-only'){
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
   }),
   Text: type => ({
     fontSize:18,
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
     textAlign: 'center',
     color: type === 'secondary' ? colors.button.secondary.text : colors.button.primary.text,
   }),
