@@ -16,7 +16,8 @@ const Register = ({navigation}) => {
         <Gap tinggi={24}/>
         <Input label="Password"/>
         <Gap tinggi={40}/>
-        <Button tulisan="Continue"/>
+        <Button tulisan="Continue" onPencet={()=> navigation.navigate('Upload')}/>
+        {/* oww ternyata itu navigate (namaYang name pada router) */}
       </View>
     </View>
   )
