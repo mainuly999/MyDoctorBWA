@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import { IL_Logo, Bg_awal} from '../../assets';
 import { Button, Gap } from '../../components';
